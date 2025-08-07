@@ -61,7 +61,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom Photography SaaS Colors
+				gold: {
+					DEFAULT: 'hsl(var(--gold))',
+					dark: 'hsl(var(--gold-dark))',
+					light: 'hsl(var(--gold-light))'
+				},
+				'dark-surface': 'hsl(var(--dark-surface))',
+				'dark-elevated': 'hsl(var(--dark-elevated))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
