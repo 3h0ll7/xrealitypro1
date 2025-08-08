@@ -9,7 +9,7 @@ const ServicesSection = () => {
       title: "التصوير السينمائي الفني",
       description: "أسلوب سينمائي متميز مع إضاءة احترافية ومعالجة متقدمة",
       icon: Film,
-      image: "/lovable-uploads/0f06fc1c-0d7a-4667-b6cf-1ac0600b4d19.png",
+      image: "/lovable-uploads/f06a5c30-19b4-4648-8ca0-bcb18d7bc9c4.png",
       // price removed
       features: ["تصوير خارجي", "معالجة احترافية", "صور عالية الجودة"]
     },
@@ -17,7 +17,7 @@ const ServicesSection = () => {
       title: "تصوير سينمائي درامي",
       description: "تصوير سينمائي بإضاءة درامية وتجارب متقنة ودقة",
       icon: Camera,
-      image: "/lovable-uploads/f6edf561-8e82-463e-85ee-f7069e984765.png",
+      image: "/lovable-uploads/1762ed94-0140-4103-90e7-6093b687813d.png",
       // price removed
       features: ["إضاءة درامية", "تنسيق المشاهد", "تأثيرات بصرية"]
     },
@@ -25,7 +25,7 @@ const ServicesSection = () => {
       title: "التصوير الرياضي المتقدم",
       description: "التقاط لحظات الانتصار والتميز الرياضي",
       icon: Star,
-      image: "/lovable-uploads/ca22a2e9-d318-4e61-a82c-7f575dff8291.png",
+      image: "/lovable-uploads/a40b0197-7640-4923-bb47-40667e0d3762.png",
       // price removed
       features: ["تصوير سريع", "دقة عالية", "لحظات حاسمة"]
     },
@@ -33,7 +33,7 @@ const ServicesSection = () => {
       title: "تصوير رياضي احترافي",
       description: "تصوير الرياضة بلحظات التميز والإثارة والحماس",
       icon: Users,
-      image: "/lovable-uploads/22213e74-b250-4c52-b99f-693072d910be.png",
+      image: "/lovable-uploads/be328543-f1b0-43d1-b300-5a6107a4cf86.png",
       // price removed
       features: ["تقنيات متطورة", "التقاط الحركة", "جودة احترافية"]
     },
@@ -41,7 +41,7 @@ const ServicesSection = () => {
       title: "التصوير التجاري الإعلاني",
       description: "تصوير إعلاني عالية الجودة لأعمالك التجارية",
       icon: Building,
-      image: "/lovable-uploads/e8a7f347-7020-4e94-914c-8846bd86540e.png",
+      image: "/lovable-uploads/136b24dc-b9e6-4eff-9412-2f124043183a.png",
       // price removed
       features: ["تصوير المنتجات", "إعلانات تجارية", "برانح الشركات"]
     },
@@ -49,7 +49,7 @@ const ServicesSection = () => {
       title: "تصوير حفل التخرج",
       description: "التقاط لحظات الخرج المتميزة لحفلات التخرج الجامعية",
       icon: Heart,
-      image: "/lovable-uploads/f8974324-41f3-44ef-90ff-f475a34c6518.png",
+      image: "/lovable-uploads/30a70e32-3d66-42f0-8223-f28ae9777e1e.png",
       // price removed
       features: ["حفلات التخرج", "صور تذكارية", "لحظات مميزة"]
     }
@@ -114,6 +114,8 @@ const ServicesSection = () => {
                   <img 
                     src={service.image} 
                     alt={service.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
