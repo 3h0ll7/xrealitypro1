@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Instagram, Mail, Clock } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -135,11 +135,11 @@ const ContactSection = () => {
                   href: "mailto:info@xreality.pro"
                 },
                 {
-                  title: "تابعنا",
-                  content: "xreality.pro@",
-                  subtitle: "أحر معلوماتنا دوماً",
-                  icon: Phone,
-                  href: "tel:xreality.pro@"
+                  title: "تابعنا على إنستغرام",
+                  content: "@xreality.pro",
+                  subtitle: "أحدث أعمالنا يوميًا",
+                  icon: Instagram,
+                  href: "https://www.instagram.com/xreality.pro?igsh=MWN0aWlseWYzcHk1bg=="
                 }
               ].map((contact, index) => (
                 <motion.div

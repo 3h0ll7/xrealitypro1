@@ -10,7 +10,7 @@ const ServicesSection = () => {
       description: "أسلوب سينمائي متميز مع إضاءة احترافية ومعالجة متقدمة",
       icon: Film,
       image: "/lovable-uploads/0f06fc1c-0d7a-4667-b6cf-1ac0600b4d19.png",
-      price: "من 500 ريال",
+      // price removed
       features: ["تصوير خارجي", "معالجة احترافية", "صور عالية الجودة"]
     },
     {
@@ -18,7 +18,7 @@ const ServicesSection = () => {
       description: "تصوير سينمائي بإضاءة درامية وتجارب متقنة ودقة",
       icon: Camera,
       image: "/lovable-uploads/f6edf561-8e82-463e-85ee-f7069e984765.png",
-      price: "من 750 ريال",
+      // price removed
       features: ["إضاءة درامية", "تنسيق المشاهد", "تأثيرات بصرية"]
     },
     {
@@ -26,7 +26,7 @@ const ServicesSection = () => {
       description: "التقاط لحظات الانتصار والتميز الرياضي",
       icon: Star,
       image: "/lovable-uploads/ca22a2e9-d318-4e61-a82c-7f575dff8291.png",
-      price: "من 400 ريال",
+      // price removed
       features: ["تصوير سريع", "دقة عالية", "لحظات حاسمة"]
     },
     {
@@ -34,7 +34,7 @@ const ServicesSection = () => {
       description: "تصوير الرياضة بلحظات التميز والإثارة والحماس",
       icon: Users,
       image: "/lovable-uploads/22213e74-b250-4c52-b99f-693072d910be.png",
-      price: "من 600 ريال",
+      // price removed
       features: ["تقنيات متطورة", "التقاط الحركة", "جودة احترافية"]
     },
     {
@@ -42,7 +42,7 @@ const ServicesSection = () => {
       description: "تصوير إعلاني عالية الجودة لأعمالك التجارية",
       icon: Building,
       image: "/lovable-uploads/e8a7f347-7020-4e94-914c-8846bd86540e.png",
-      price: "من 800 ريال",
+      // price removed
       features: ["تصوير المنتجات", "إعلانات تجارية", "برانح الشركات"]
     },
     {
@@ -50,7 +50,7 @@ const ServicesSection = () => {
       description: "التقاط لحظات الخرج المتميزة لحفلات التخرج الجامعية",
       icon: Heart,
       image: "/lovable-uploads/f8974324-41f3-44ef-90ff-f475a34c6518.png",
-      price: "من 350 ريال",
+      // price removed
       features: ["حفلات التخرج", "صور تذكارية", "لحظات مميزة"]
     }
   ];
@@ -142,11 +142,8 @@ const ServicesSection = () => {
                     ))}
                   </div>
                   
-                  {/* Price and CTA */}
-                  <div className="flex items-center justify-between">
-                    <div className="text-lg font-bold hero-text">
-                      {service.price}
-                    </div>
+                  {/* CTA */}
+                  <div className="flex items-center justify-center">
                     <Button size="sm" variant="outline" className="border-primary/30 hover:border-primary group-hover:bg-primary group-hover:text-primary-foreground">
                       عرض التفاصيل
                     </Button>
