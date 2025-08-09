@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Instagram, Mail, Clock } from "lucide-react";
+import IOKnob from "@/components/IOKnob";
 
 const ContactSection = () => {
   return (
@@ -199,6 +200,9 @@ const ContactSection = () => {
                       <Clock className="w-4 h-4 text-primary" />
                     </div>
                     <span>خدماتنا</span>
+                    <div className="ml-auto rtl:mr-auto">
+                      <IOKnob />
+                    </div>
                   </h3>
                   
                   <div className="space-y-4">
