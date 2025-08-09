@@ -160,8 +160,10 @@ const FeaturesSection = () => {
             <div className="relative">
               <div className="aspect-video bg-dark-surface/50 rounded-2xl overflow-hidden">
                 <img 
-                  src="/lovable-uploads/ca22a2e9-d318-4e61-a82c-7f575dff8291.png"
-                  alt="معدات التصوير"
+                  src="/lovable-uploads/a365c107-ebe5-460e-90a9-685f8dbc1484.png"
+                  alt="عرض صور فوتوغرافية"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>
