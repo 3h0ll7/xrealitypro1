@@ -182,8 +182,18 @@ const ContactSection = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
             >
-              <Card className="bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20">
-                <CardContent className="p-6">
+              <Card className="relative overflow-hidden bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20">
+                {/* Decorative background image */}
+                <div aria-hidden="true" className="pointer-events-none absolute -right-8 -bottom-8 w-40 md:w-56 opacity-25">
+                  <img
+                    src="/lovable-uploads/cd255d73-6669-4097-871d-ff1306c0a083.png"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-auto object-contain"
+                  />
+                </div>
+                <CardContent className="relative z-10 p-6">
                   <h3 className="text-xl font-bold mb-4 flex items-center space-x-2 rtl:space-x-reverse">
                     <div className="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center">
                       <Clock className="w-4 h-4 text-primary" />
