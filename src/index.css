@@ -123,13 +123,14 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground font-sans overflow-x-hidden;
     background: var(--gradient-hero);
     min-height: 100vh;
   }
   
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 }
 
