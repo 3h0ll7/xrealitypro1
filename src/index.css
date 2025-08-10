@@ -126,11 +126,17 @@ All colors MUST be HSL.
     @apply bg-background text-foreground font-sans overflow-x-hidden;
     background: var(--gradient-hero);
     min-height: 100vh;
+    /* Prevent layout shift when vertical scrollbar appears/disappears */
+    overflow-y: scroll;
+    padding-right: 0 !important;
+    overscroll-behavior: none;
   }
   
   html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    /* Reserve scrollbar space to avoid reflow */
+    scrollbar-gutter: stable both-edges;
   }
 }
 
