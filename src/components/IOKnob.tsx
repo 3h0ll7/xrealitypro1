@@ -38,7 +38,7 @@ const IOKnob: React.FC<IOKnobProps> = ({ defaultOn = false, onChange, className 
       <div className="absolute inset-0 rounded-full shadow-inner" />
       {/* knob */}
       <motion.div
-        layout
+        initial={false}
         transition={{ type: "spring", stiffness: 500, damping: 40 }}
         className={cn(
           "absolute top-1 left-1 h-8 w-8 rounded-full",
