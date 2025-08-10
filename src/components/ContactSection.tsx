@@ -200,7 +200,7 @@ const ContactSection = () => {
                       <Clock className="w-4 h-4 text-primary" />
                     </div>
                     <span>خدماتنا</span>
-                    <div className="ml-auto rtl:mr-auto">
+                    <div>
                       <IOKnob />
                     </div>
                   </h3>
