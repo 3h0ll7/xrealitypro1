@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Camera, Zap, Users, Award, Shield, Headphones } from "lucide-react";
-import featuresBg from "@/assets/features-bg.jpg";
+import featuresBg from "@/assets/features-bg-new.jpg";
 
 const FeaturesSection = () => {
   const features = [
