@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Camera, Film, Users, Building, Heart, Star } from "lucide-react";
+import servicesBg from "@/assets/services-bg.jpg";
 
 const ServicesSection = () => {
   const services = [
@@ -56,7 +57,16 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-dark-surface/30">
+    <section 
+      id="services" 
+      className="py-20 relative overflow-hidden"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(${servicesBg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}
+    >
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <motion.div

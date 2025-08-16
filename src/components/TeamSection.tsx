@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
+import teamBg from "@/assets/team-bg.jpg";
 
 const TeamSection = () => {
   const members = [
@@ -24,7 +25,16 @@ const TeamSection = () => {
   ];
 
   return (
-    <section id="team" className="py-20 bg-dark-surface/30">
+    <section 
+      id="team" 
+      className="py-20 relative overflow-hidden"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(${teamBg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}
+    >
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

@@ -5,10 +5,20 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Instagram, Mail, Clock } from "lucide-react";
 import IOKnob from "@/components/IOKnob";
+import contactBg from "@/assets/contact-bg.jpg";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-20 bg-dark-surface/30">
+    <section 
+      id="contact" 
+      className="py-20 relative overflow-hidden"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(${contactBg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}
+    >
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <motion.div
